@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+nav {
+    background-color: crimson;
+    color: whitesmoke;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: pink;
+  }
+  
+  .product-grid {
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+    justify-items: center;
+  }
+  .product-item {
+    border: 3px solid pink;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .product-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  .product-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px purple;
+  }
+    
+  @media only screen and (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .product-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  
+    form {
+      margin: 20px auto;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: whitesmoke;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box; 
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input[type="submit"] {
+      background-color: crimson;
+      color: whitesmoke;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: palevioletred;
+    }
+  
+    #text {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .buy-button {
+    background-color:  crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: palevioletred;
+  }
